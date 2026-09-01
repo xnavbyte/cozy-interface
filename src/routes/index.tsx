@@ -109,7 +109,7 @@ function I({ n, size = 20, className = "i" }: { n: string; size?: number; classN
 function Index() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [online, setOnline] = useState<string>("Сервер онлайн");
-  const [toasts, setToasts] = useState<{ id: number; title: string; sub?: string }[]>([]);
+  const [toasts, setToasts] = useState<{ id: number; title: string; sub: string | undefined }[]>([]);
   const toastId = useRef(0);
 
   const [news, setNews] = useState<NewsItem[]>([]);
